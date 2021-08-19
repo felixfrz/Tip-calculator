@@ -146,8 +146,23 @@ class _TipCalculatorState extends State<TipCalculator> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Tip'),
-                      Text('\$$_tipPercentage'),
+                      Text(
+                        'Tip',
+                        style: TextStyle(
+                          color: Colors.grey.shade700,
+                        ),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(18.0),
+                        child: Text(
+                          '\$34',
+                          style: TextStyle(
+                            color: _purple,
+                            fontSize: 17.0,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ],
